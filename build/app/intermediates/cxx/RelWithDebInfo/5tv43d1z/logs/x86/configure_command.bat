@@ -1,0 +1,20 @@
+@echo off
+"C:\\Users\\sisak\\AppData\\Local\\Android\\sdk\\cmake\\3.22.1\\bin\\cmake.exe" ^
+  "-HC:\\flutter\\packages\\flutter_tools\\gradle\\src\\main\\groovy" ^
+  "-DCMAKE_SYSTEM_NAME=Android" ^
+  "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON" ^
+  "-DCMAKE_SYSTEM_VERSION=21" ^
+  "-DANDROID_PLATFORM=android-21" ^
+  "-DANDROID_ABI=x86" ^
+  "-DCMAKE_ANDROID_ARCH_ABI=x86" ^
+  "-DANDROID_NDK=C:\\Users\\sisak\\AppData\\Local\\Android\\sdk\\ndk\\26.3.11579264" ^
+  "-DCMAKE_ANDROID_NDK=C:\\Users\\sisak\\AppData\\Local\\Android\\sdk\\ndk\\26.3.11579264" ^
+  "-DCMAKE_TOOLCHAIN_FILE=C:\\Users\\sisak\\AppData\\Local\\Android\\sdk\\ndk\\26.3.11579264\\build\\cmake\\android.toolchain.cmake" ^
+  "-DCMAKE_MAKE_PROGRAM=C:\\Users\\sisak\\AppData\\Local\\Android\\sdk\\cmake\\3.22.1\\bin\\ninja.exe" ^
+  "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\\Users\\sisak\\Documents\\Projects\\my_first_app\\build\\app\\intermediates\\cxx\\RelWithDebInfo\\5tv43d1z\\obj\\x86" ^
+  "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=C:\\Users\\sisak\\Documents\\Projects\\my_first_app\\build\\app\\intermediates\\cxx\\RelWithDebInfo\\5tv43d1z\\obj\\x86" ^
+  "-DCMAKE_BUILD_TYPE=RelWithDebInfo" ^
+  "-BC:\\Users\\sisak\\Documents\\Projects\\my_first_app\\android\\app\\.cxx\\RelWithDebInfo\\5tv43d1z\\x86" ^
+  -GNinja ^
+  -Wno-dev ^
+  --no-warn-unused-cli

@@ -1,0 +1,1 @@
+ C:\\Users\\sisak\\Documents\\Projects\\my_first_app\\.dart_tool\\flutter_build\\daebb07e1ce071345617366b9e28ba06\\dart_build_result.json: 
