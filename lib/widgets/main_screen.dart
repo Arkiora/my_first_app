@@ -30,24 +30,46 @@ class MainScreen extends StatelessWidget {
             bottomNavigationBar: BottomNavigationBar(
               currentIndex: state.selectedIndex,
               type: BottomNavigationBarType.fixed,
+              selectedItemColor: Colors.black,
+              unselectedItemColor: Colors.grey,
               onTap: (index) {
                 BlocProvider.of<NavbarBloc>(context).add(NavbarItemTapped(index));
               },
-              items: const [
+              items: [
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.home),
+                  icon: Image.asset(
+                    'assets/icons/Icon_home.png',
+                    height: 24,
+                    width: 24,
+                    color: state.selectedIndex == 0 ? Colors.black : Colors.grey,
+                  ),
                   label: 'Accueil',
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.book),
+                  icon: Image.asset(
+                    'assets/icons/Icon_cours.png',
+                    height: 24,
+                    width: 24,
+                    color: state.selectedIndex == 1 ? Colors.black : Colors.grey,
+                  ),
                   label: 'Cours',
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.help_outline),
+                  icon: Image.asset(
+                    'assets/icons/Icon_entrainement.png',
+                    height: 24,
+                    width: 24,
+                    color: state.selectedIndex == 2 ? Colors.black : Colors.grey,
+                  ),
                   label: 'Entrainement',
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.person),
+                  icon: Image.asset(
+                    'assets/icons/Icon_profil.png',
+                    height: 24,
+                    width: 24,
+                    color: state.selectedIndex == 3 ? Colors.black : Colors.grey,
+                  ),
                   label: 'Profil',
                 ),
               ],
