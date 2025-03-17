@@ -9,7 +9,7 @@ import '../screens/entrainement_screen.dart';
 import '../screens/profile_screen.dart';
 
 class MainScreen extends StatelessWidget {
-  MainScreen({Key? key}) : super(key: key);
+  MainScreen({super.key});
 
   // Pages à afficher
   final List<Widget> _pages = [

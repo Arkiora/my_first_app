@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CoursScreen extends StatelessWidget {
-  const CoursScreen({Key? key}) : super(key: key);
+  const CoursScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
